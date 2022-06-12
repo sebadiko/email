@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1655064231241" clover="3.2.0">
+  <project timestamp="1655064231241" name="All files">
+    <metrics statements="35" coveredstatements="30" conditionals="5" coveredconditionals="4" methods="9" coveredmethods="6" elements="49" coveredelements="40" complexity="0" loc="35" ncloc="35" packages="2" files="4" classes="4"/>
+    <package name="email">
+      <metrics statements="7" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+      <file name="contacto.ts" path="C:\Users\Usuario\Desktop\Email Integrador\email\contacto.ts">
+        <metrics statements="7" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="18" type="stmt"/>
+        <line num="4" count="18" type="stmt"/>
+        <line num="8" count="18" type="stmt"/>
+        <line num="9" count="18" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="email.CarpetaComposite">
+      <metrics statements="28" coveredstatements="25" conditionals="5" coveredconditionals="4" methods="6" coveredmethods="5"/>
+      <file name="CarpetaComposite.ts" path="C:\Users\Usuario\Desktop\Email Integrador\email\CarpetaComposite\CarpetaComposite.ts">
+        <metrics statements="16" coveredstatements="13" conditionals="5" coveredconditionals="4" methods="4" coveredmethods="3"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="14" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="16" count="13" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="23" count="10" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="34" count="3" type="stmt"/>
+        <line num="35" count="3" type="stmt"/>
+        <line num="36" count="3" type="stmt"/>
+      </file>
+      <file name="EmailComponent.ts" path="C:\Users\Usuario\Desktop\Email Integrador\email\CarpetaComposite\EmailComponent.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
+      </file>
+      <file name="EmailLeaf.ts" path="C:\Users\Usuario\Desktop\Email Integrador\email\CarpetaComposite\EmailLeaf.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="9" type="stmt"/>
+        <line num="6" count="9" type="stmt"/>
+        <line num="9" count="9" type="stmt"/>
+        <line num="10" count="9" type="stmt"/>
+        <line num="11" count="9" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
