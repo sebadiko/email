@@ -54,3 +54,10 @@ test('Agregar la Bandeja de salida con la carpeta creada', () => {
 test('El objeto de emailManager no debe ser nulo', () => {
   expect(emailManager !== null).toBeTruthy;
 })
+
+
+test('Se debe poder crear una carpeta de emails', () => {
+  emailManager.CrearCarpeta("Carpeta1", 1, "", "");
+
+  expect(emailManager.carpetas[1].nombre).toEqual("Carpeta1");
+})
