@@ -3,14 +3,8 @@
     "@types/jest": "^28.1.1",
     "i": "^0.3.7",
     "jest": "^28.1.1",
-<<<<<<< HEAD
     "ts-jest": "^28.0.5",
     "typescript": "^4.7.3"
-=======
-    "ts-jest": "^28.0.4",
-    "typescript": "^4.7.3",
-    "typescriptnpm": "^1.0.1"
->>>>>>> 45bc8e0415e2ccf72950b4e17ef13a4dda9e5834
   },
   "name": "email-integrador",
   "version": "1.0.0",
