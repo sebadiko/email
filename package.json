@@ -203,7 +203,19 @@
   "scripts": {
     "test": "jest"
   },
+  "test": "jest",
   "author": "Zalazar, Canepa, Jones, Dikowiec",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebadiko/email.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sebadiko/email/issues"
+  },
+  "homepage": "https://github.com/sebadiko/email#readme"
 }
