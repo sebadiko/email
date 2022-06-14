@@ -76,3 +76,12 @@ test('Se debe poder agregar emails a una carpeta', () => {
 
   expect(emailManager.carpetas[1].CantidadEmails()).toBe(4);
 })
+
+test('Se debe poder enviar un email', () => {
+  let emailTest1: EmailLeaf = new EmailLeaf("asunto1", "contenido1", new Contacto("nombre1", "email1"), [new Contacto("nombre2", "email2")]);
+
+  emailManager.Enviar(emailTest1);
+
+  expect(emailManager.BandejaEnviados.length).toBe(1);
+  expect(emailManager.BandejaEnviados[0].Asunto).toEqual("asunto1");
+})
