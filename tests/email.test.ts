@@ -85,8 +85,3 @@ test('Se debe poder enviar un email', () => {
   expect(emailManager.BandejaEnviados.length).toBe(1);
   expect(emailManager.BandejaEnviados[0].Asunto).toEqual("asunto1");
 })
-
-
-
-
-
