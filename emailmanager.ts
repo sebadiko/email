@@ -15,8 +15,4 @@ export class EmailManager {
     }
 
 
-    public Buscar(string): Array<Email> {
-        return [];
-    }
-
 }

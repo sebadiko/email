@@ -5,6 +5,12 @@ export class CarpetaComposite extends EmailComponent {
     public nombre: string;
     public identificador: number;
 
+    constructor(nombre: string, identificador: number, asunto = "", contenido = "") {
+        super(asunto, contenido);
+        this.nombre = nombre;
+        this.identificador = identificador;
+    }
+
     public CantidadEmails(): number {
         //para obtener la cantidad de emails que tiene la carpeta
         ///utilizamos recursividad que dependera del tipo de elemento que sea
@@ -30,10 +36,6 @@ export class CarpetaComposite extends EmailComponent {
         }
     }
 
-    constructor(nombre: string, identificador: number, asunto = "", contenido = "") {
-        super(asunto, contenido);
-        this.nombre = nombre;
-        this.identificador = identificador;
-    }
+
 }
 
