@@ -2,6 +2,10 @@ import { EmailLeaf } from "../CarpetaComposite/EmailLeaf";
 import { CarpetaComposite } from "../CarpetaComposite/CarpetaComposite";
 import { EmailComponent } from "../CarpetaComposite/EmailComponent";
 import { Contacto } from "../contacto";
+import { EmailManagerSing } from "../EmailManagerSingleton/EmailManagerSing";
+
+
+let emailManager = EmailManagerSing.getInstance();
 
 test('Crear Mails en una Carpeta', () => {
   let emailTest1: EmailLeaf = new EmailLeaf("asunto1", "contenido1", new Contacto("nombre1", "email1"), [new Contacto("nombre2", "email2")]);
@@ -47,5 +51,10 @@ test('Agregar la Bandeja de salida con la carpeta creada', () => {
     //se espera que la carpeta nueva solo tenga los 4 elementos iniciales
     expect(carpetaNueva.CantidadEmails()).toBe(4);
 })
+
+test('El objeto de emailManager no debe ser nulo', () => {
+  expect(emailManager !== null).toBeTruthy;
+})
+
 
 
