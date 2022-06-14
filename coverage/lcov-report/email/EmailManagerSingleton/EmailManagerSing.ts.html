@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">64.7% </span>
+                <span class="strong">93.33% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>11/17</span>
+                <span class='fraction'>14/15</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">46.15% </span>
+                <span class="strong">84.61% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>6/13</span>
+                <span class='fraction'>11/13</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">80% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>4/5</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">64.7% </span>
+                <span class="strong">93.33% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>11/17</span>
+                <span class='fraction'>14/15</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -109,17 +109,14 @@
 <a name='L44'></a><a href='#L44'>44</a>
 <a name='L45'></a><a href='#L45'>45</a>
 <a name='L46'></a><a href='#L46'>46</a>
-<a name='L47'></a><a href='#L47'>47</a>
-<a name='L48'></a><a href='#L48'>48</a>
-<a name='L49'></a><a href='#L49'>49</a>
-<a name='L50'></a><a href='#L50'>50</a>
-<a name='L51'></a><a href='#L51'>51</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L47'></a><a href='#L47'>47</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -139,15 +136,10 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -159,8 +151,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { EmailLeaf } from "../CarpetaComposite/EmailLeaf";
@@ -171,6 +163,7 @@ export class EmailManagerSing {
     //instancia privada para manejar el singleton internamente
     private static instance: EmailManagerSing;
     public carpetas: CarpetaComposite[] = [];
+    public BandejaEnviados: EmailLeaf[] = [];
 &nbsp;
     //el constructor debe estar privado para no permitir generar instancia de la clase
     private constructor() {
@@ -188,16 +181,11 @@ export class EmailManagerSing {
     }
 &nbsp;
 &nbsp;
-    public <span class="fstat-no" title="function not covered" >Enviar(</span>email: EmailLeaf): Array&lt;EmailLeaf&gt;{
-        let BandejaEnviados: Array&lt;EmailLeaf&gt; = <span class="cstat-no" title="statement not covered" >[];</span>
-        //BandejaEntrada: Array&lt;Email&gt; = [];
+    public Enviar(email: EmailLeaf){
         //si tenemos todos los datos, agregamos el mail a bandeja de enviados
-<span class="cstat-no" title="statement not covered" >        <span class="missing-if-branch" title="if path not taken" >I</span>if (email.Asunto != "" &amp;&amp; email.Contenido != "" &amp;&amp; email.Para.length &gt; 0 &amp;&amp; email.Remitente != null) {</span>
-<span class="cstat-no" title="statement not covered" >            BandejaEnviados.push(email);</span>
-<span class="cstat-no" title="statement not covered" >            return BandejaEnviados;</span>
+        if (email.Asunto != "" &amp;&amp; email.Contenido != "" &amp;&amp; email.Para.length &gt; 0 &amp;&amp; email.Remitente != null) {
+            this.BandejaEnviados.push(email);
         }
-        //si no ingresa en el if, devolvemos false
-<span class="cstat-no" title="statement not covered" >        return BandejaEnviados;</span>
     }
 &nbsp;
     public CrearCarpeta(pNombre: string, pIdentificador: number, pAsunto = <span class="branch-0 cbranch-no" title="branch not covered" >"",</span> pContenido = <span class="branch-0 cbranch-no" title="branch not covered" >"")</span>: Boolean{
@@ -220,7 +208,7 @@ export class EmailManagerSing {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Tue Jun 14 2022 19:34:00 GMT-0300 (hora estándar de Argentina)
+                at Tue Jun 14 2022 19:48:43 GMT-0300 (hora estándar de Argentina)
             </div>
         <script src="../../prettify.js"></script>
         <script>

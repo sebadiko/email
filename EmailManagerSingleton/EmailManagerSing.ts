@@ -6,6 +6,7 @@ export class EmailManagerSing {
     //instancia privada para manejar el singleton internamente
     private static instance: EmailManagerSing;
     public carpetas: CarpetaComposite[] = [];
+    public BandejaEnviados: EmailLeaf[] = [];
 
     //el constructor debe estar privado para no permitir generar instancia de la clase
     private constructor() {
@@ -23,16 +24,11 @@ export class EmailManagerSing {
     }
 
 
-    public Enviar(email: EmailLeaf): Array<EmailLeaf>{
-        let BandejaEnviados: Array<EmailLeaf> = [];
-        //BandejaEntrada: Array<Email> = [];
+    public Enviar(email: EmailLeaf){
         //si tenemos todos los datos, agregamos el mail a bandeja de enviados
         if (email.Asunto != "" && email.Contenido != "" && email.Para.length > 0 && email.Remitente != null) {
-            BandejaEnviados.push(email);
-            return BandejaEnviados;
+            this.BandejaEnviados.push(email);
         }
-        //si no ingresa en el if, devolvemos false
-        return BandejaEnviados;
     }
 
     public CrearCarpeta(pNombre: string, pIdentificador: number, pAsunto = "", pContenido = ""): Boolean{
