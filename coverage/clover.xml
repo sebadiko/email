@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1655246923922" clover="3.2.0">
-  <project timestamp="1655246923922" name="All files">
-    <metrics statements="50" coveredstatements="44" conditionals="18" coveredconditionals="15" methods="14" coveredmethods="11" elements="82" coveredelements="70" complexity="0" loc="50" ncloc="50" packages="3" files="5" classes="5"/>
+<coverage generated="1655247209171" clover="3.2.0">
+  <project timestamp="1655247209171" name="All files">
+    <metrics statements="50" coveredstatements="44" conditionals="18" coveredconditionals="17" methods="14" coveredmethods="11" elements="82" coveredelements="72" complexity="0" loc="50" ncloc="50" packages="3" files="5" classes="5"/>
     <package name="email">
       <metrics statements="7" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
       <file name="contacto.ts" path="C:\Users\Usuario\Desktop\Email Integrador\email\contacto.ts">
@@ -56,9 +56,9 @@
       </file>
     </package>
     <package name="email.EmailManagerSingleton">
-      <metrics statements="15" coveredstatements="14" conditionals="13" coveredconditionals="11" methods="5" coveredmethods="5"/>
+      <metrics statements="15" coveredstatements="14" conditionals="13" coveredconditionals="13" methods="5" coveredmethods="5"/>
       <file name="EmailManagerSing.ts" path="C:\Users\Usuario\Desktop\Email Integrador\email\EmailManagerSingleton\EmailManagerSing.ts">
-        <metrics statements="15" coveredstatements="14" conditionals="13" coveredconditionals="11" methods="5" coveredmethods="5"/>
+        <metrics statements="15" coveredstatements="14" conditionals="13" coveredconditionals="13" methods="5" coveredmethods="5"/>
         <line num="2" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
